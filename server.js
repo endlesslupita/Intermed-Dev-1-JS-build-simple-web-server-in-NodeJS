@@ -1,7 +1,7 @@
 import http from 'http';
 import fs from 'fs';
 
-http.createServer(function(req, res) 
+const server = http.createServer(function(req, res) 
 {
     if (req.url === "/") 
     {
@@ -29,3 +29,5 @@ http.createServer(function(req, res)
         res.end("Not found")
     };
 }).listen(process.env.PORT || 3000)
+
+export default server;
