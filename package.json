@@ -1,0 +1,21 @@
+{
+  "name": "intermed-dev-1-js-build-simple-web-server-in-nodejs",
+  "version": "1.0.0",
+  "description": "In this assignment, you will create a simple web server using Node.js. This server will serve a basic HTML page and handle different routes including a homepage and an about page. By the end of this assignment, your server will be able to:",
+  "homepage": "https://github.com/endlesslupita/Intermed-Dev-1-JS-build-simple-web-server-in-NodeJS#readme",
+  "bugs": {
+    "url": "https://github.com/endlesslupita/Intermed-Dev-1-JS-build-simple-web-server-in-NodeJS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endlesslupita/Intermed-Dev-1-JS-build-simple-web-server-in-NodeJS.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
