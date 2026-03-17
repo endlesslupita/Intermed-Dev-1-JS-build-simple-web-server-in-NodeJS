@@ -8,10 +8,15 @@ http.createServer(function(req, res)
         fs.readFile("home.html", (err, data) => 
         {if(err) 
             {
-            console.err("Error reading file: ", err);
+            console.error("Error reading file: ", err);
             return;
             }
-        })
+        else
+        {
+            res.end(data);
+        }
+        }
+        )
     }
     else if (req.url === "/about") 
     {
@@ -23,4 +28,4 @@ http.createServer(function(req, res)
         res.writeHead(404)
         res.end("Not found")
     };
-})
+}).listen(process.env.PORT || 3000)
