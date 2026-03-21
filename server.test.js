@@ -1,5 +1,6 @@
 import request from 'supertest';
 import server from './server.js';
+afterAll(() => server.close());
 
 test('should return 200 for the home route', async () => {
   const res = await request(server).get('/');
