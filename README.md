@@ -1,4 +1,51 @@
-# Intermed-Dev-1-JS-build-simple-web-server-in-NodeJS
+# Simple Web Server in Node.js
+
+A simple HTTP web server built with Node.js that serves a static HTML home page and handles multiple routes.
+
+## How to Run
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the server:
+   ```bash
+   node server.js
+   ```
+3. Open your browser and visit:
+   - `http://localhost:3000/` — home page
+   - `http://localhost:3000/about` — about page
+   - Any other route — returns a 404 Not Found response
+
+## Tests
+
+Run the test suite with:
+```bash
+npm test
+```
+
+**Normal cases:**
+- `GET /` returns status 200
+- `GET /about` returns status 200
+- `GET /random-address` returns status 404
+
+**Edge cases:**
+- `GET /About` (wrong capitalization) returns status 404
+- `GET /about/` (trailing slash) returns status 404
+- `GET /about?foo=bar` (query string) returns status 404
+
+---
+
+## Video Demo Reference
+
+- Show the server starting with `node server.js`
+- Visit `http://localhost:3000/` in the browser — show the home page
+- Visit `http://localhost:3000/about` — show the text response
+- Visit an invalid route (e.g. `http://localhost:3000/xyz`) — show the 404 response
+- Run `npm test` and show all 6 tests passing
+- Point out the 3 normal cases and 3 edge cases in the output
+
+---
 
 # Assignment: Building a Simple Web Server in Node.js
 
